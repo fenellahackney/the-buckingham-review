@@ -2,9 +2,12 @@ body {
   padding-top: 5rem;
   font-family: courier;
   color: rgb(102, 57, 40);
-
-
 }
+
+.btn-primary {
+  background-color: rgb(102, 57, 40);
+}
+
 .starter-template {
   padding: 0rem 0rem;
   text-align: center;
