@@ -4,6 +4,10 @@ body {
   color: rgb(102, 57, 40);
 }
 
+.nav-link {
+  color: rgb(102, 57, 40);
+}
+
 .btn-primary {
   background-color: rgb(102, 57, 40);
 }
