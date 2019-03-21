@@ -4,6 +4,15 @@ body {
   color: rgb(102, 57, 40);
 }
 
+img {
+    display:flex;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 500px;
+    max-height: 900px;
+    max-width: 325px;
+}
+
 .nav-link {
   color: rgb(102, 57, 40);
 }
@@ -24,109 +33,4 @@ body {
 
 .lead {
   font-size: 12px;
-}
-
-#sliderContainer {
-    width: 800px;
-    margin: 0;
-    padding: 0px;
-    position: relative;
-    overflow: hidden;
-}
-#sliderContainer .slider {
-    margin: 0;
-    padding: 0;
-    width: 800px;
-    float: left;
-    position: relative;
-}
-
-img {
-    display:flex;
-    padding: 10px;
-    margin: 0 auto;
-    border-radius: 500px;
-    max-height: 900px;
-    max-width: 325px;
-}
-
-.newsletter {
-  text-align: center;
-  padding: var(--space-md) 0;
-}
-
-.newsletter__form, .newsletter__feedback {
-  max-width: 520px;
-}
-
-.newsletter__description {
-  line-height: 1.4;
-}
-
-.newsletter__form {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  grid-gap: var(--space-xxs);
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.newsletter__feedback {
-  font-size: var(--text-sm);
-  padding: var(--space-xs);
-  border-radius: 0.25em;
-  margin: var(--space-sm) auto 0;
-  // hide
-  position: absolute;
-  clip: rect(1px, 1px, 1px, 1px);
-  clip-path: inset(50%);
-
-  &::before {
-    content: '';
-    @include triangle(up, 10px, currentColor);
-    position: absolute;
-    top: 0;
-    left: 1em;
-    transform: translateY(-100%);
-  }
-}
-
-.newsletter__feedback--is-visible {
-  // show
-  position: relative;
-  clip: auto;
-  clip-path: none;
-}
-
-.newsletter__feedback--success {
-  background-color: alpha(var(--color-success), 0.2);
-
-  &::before {
-    color: alpha(var(--color-success), 0.2); // triangle color
-  }
-}
-
-.newsletter__feedback--error {
-  background-color: alpha(var(--color-error), 0.2);
-
-  &::before {
-    color: alpha(var(--color-error), 0.2); // triangle color
-  }
-}
-
-.newsletter__feedback--warning {
-  background-color: alpha(var(--color-warning), 0.2);
-
-  &::before {
-    color: alpha(var(--color-warning), 0.2); // triangle color
-  }
-}
-
-.newsletter__small {
-  line-height: 1.4;
-  color: var(--color-contrast-medium);
-
-  a {
-    color: var(--color-contrast-high);
-  }
 }
